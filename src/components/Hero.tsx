@@ -1,0 +1,70 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import heroImage from "@/assets/hero-cocora.jpg";
+
+const Hero = () => {
+  const scrollToTours = () => {
+    const element = document.querySelector("#tours");
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToBooking = () => {
+    const element = document.querySelector("#booking");
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={heroImage}
+          alt="Colombian Andes mountains with wax palms"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/50 to-primary/30" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          Entdecke die Anden
+          <br />
+          <span className="text-accent">auf zwei Rädern</span>
+        </h1>
+        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white/90 animate-fade-in">
+          Erlebe unvergessliche Mountainbike-Abenteuer in den spektakulären Bergen Kolumbiens.
+          Von Cocora bis zur Sierra Nevada – deine Traumtour wartet.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
+          <Button
+            variant="hero"
+            size="xl"
+            onClick={scrollToTours}
+            className="group"
+          >
+            Touren entdecken
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
+          <Button
+            variant="outline"
+            size="xl"
+            onClick={scrollToBooking}
+            className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
+          >
+            Beratung buchen
+          </Button>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 rounded-full border-2 border-white/50 flex items-start justify-center p-2">
+          <div className="w-1 h-3 bg-white/70 rounded-full" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
