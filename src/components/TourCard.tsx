@@ -1,6 +1,7 @@
+import { Clock, TrendingUp, MapPin, Route } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Clock, TrendingUp, Mountain, MapPin } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface TourCardProps {
   title: string;
@@ -22,65 +23,42 @@ const TourCard = ({
   elevation,
   distance,
   description,
-  highlights,
   onViewDetails,
 }: TourCardProps) => {
   const { t } = useLanguage();
 
   return (
-    <Card className="overflow-hidden group hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
-      <div className="relative h-64 overflow-hidden">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
-        <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white">
-          {title}
-        </h3>
+    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+      <div className="relative h-48 overflow-hidden">
+        <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
       </div>
-
-      <div className="p-6 space-y-4">
-        <div className="grid grid-cols-2 gap-4">
+      
+      <div className="p-6">
+        <h3 className="text-2xl font-bold mb-4">{title}</h3>
+        
+        <div className="grid grid-cols-2 gap-3 mb-4">
           <div className="flex items-center gap-2 text-sm">
             <Clock className="h-4 w-4 text-primary" />
-            <span className="text-muted-foreground">{duration}</span>
+            <span>{duration}</span>
           </div>
           <div className="flex items-center gap-2 text-sm">
             <TrendingUp className="h-4 w-4 text-primary" />
-            <span className="text-muted-foreground">{difficulty}</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm">
-            <Mountain className="h-4 w-4 text-primary" />
-            <span className="text-muted-foreground">{elevation}</span>
+            <span>{difficulty}</span>
           </div>
           <div className="flex items-center gap-2 text-sm">
             <MapPin className="h-4 w-4 text-primary" />
-            <span className="text-muted-foreground">{distance}</span>
+            <span>{elevation}</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm">
+            <Route className="h-4 w-4 text-primary" />
+            <span>{distance}</span>
           </div>
         </div>
 
-        <p className="text-foreground/80">{description}</p>
+        <p className="text-foreground/70 mb-4 line-clamp-3">{description}</p>
 
-        <div>
-          <h4 className="font-semibold mb-2">Highlights:</h4>
-          <ul className="space-y-1">
-            {highlights.map((highlight, index) => (
-              <li key={index} className="text-sm text-muted-foreground flex items-start">
-                <span className="text-primary mr-2">•</span>
-                {highlight}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <Button
-          variant="default"
-          className="w-full"
-          onClick={scrollToBooking}
-        >
-          Tour anfragen
+        <Button variant="hero" className="w-full" onClick={onViewDetails}>
+          {t("tours.viewDetails")}
         </Button>
       </div>
     </Card>
