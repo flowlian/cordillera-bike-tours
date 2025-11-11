@@ -11,6 +11,7 @@ interface TourCardProps {
   distance: string;
   description: string;
   highlights: string[];
+  onViewDetails: () => void;
 }
 
 const TourCard = ({
@@ -22,11 +23,9 @@ const TourCard = ({
   distance,
   description,
   highlights,
+  onViewDetails,
 }: TourCardProps) => {
-  const scrollToBooking = () => {
-    const element = document.querySelector("#booking");
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
+  const { t } = useLanguage();
 
   return (
     <Card className="overflow-hidden group hover:shadow-xl transition-all duration-500 hover:-translate-y-2">

@@ -2,16 +2,19 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Mountain } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSelector from "./LanguageSelector";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t } = useLanguage();
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Touren", path: "#tours" },
-    { name: "Über uns", path: "#about" },
-    { name: "FAQ", path: "#faq" },
+    { name: t("nav.home"), path: "/" },
+    { name: t("nav.tours"), path: "#tours" },
+    { name: t("nav.about"), path: "#about" },
+    { name: t("nav.faq"), path: "#faq" },
   ];
 
   const isActive = (path: string) => {
@@ -37,7 +40,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <button
                 key={link.path}
@@ -49,12 +52,20 @@ const Navigation = () => {
                 {link.name}
               </button>
             ))}
+            <LanguageSelector />
             <Button
               variant="hero"
               size="default"
               onClick={() => handleNavClick("#booking")}
             >
-              Beratung buchen
+              {t("nav.booking")}
+            </Button>
+            <Button
+              variant="secondary-cta"
+              size="default"
+              onClick={() => handleNavClick("#booking")}
+            >
+              {t("nav.bookTour")}
             </Button>
           </div>
 
@@ -83,13 +94,22 @@ const Navigation = () => {
                   {link.name}
                 </button>
               ))}
+              <LanguageSelector />
               <Button
                 variant="hero"
                 size="default"
                 onClick={() => handleNavClick("#booking")}
                 className="w-full"
               >
-                Beratung buchen
+                {t("nav.booking")}
+              </Button>
+              <Button
+                variant="secondary-cta"
+                size="default"
+                onClick={() => handleNavClick("#booking")}
+                className="w-full"
+              >
+                {t("nav.bookTour")}
               </Button>
             </div>
           </div>

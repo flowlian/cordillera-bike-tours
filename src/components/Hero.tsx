@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import heroImage from "@/assets/hero-cocora.jpg";
 
 const Hero = () => {
+  const { t } = useLanguage();
+  
   const scrollToTours = () => {
     const element = document.querySelector("#tours");
     element?.scrollIntoView({ behavior: "smooth" });
@@ -28,13 +31,10 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-          Entdecke die Anden
-          <br />
-          <span className="text-accent">auf zwei Rädern</span>
+          {t("hero.title")}
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white/90 animate-fade-in">
-          Erlebe unvergessliche Mountainbike-Abenteuer in den spektakulären Bergen Kolumbiens.
-          Von Cocora bis zur Sierra Nevada – deine Traumtour wartet.
+          {t("hero.subtitle")}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
           <Button
@@ -43,16 +43,15 @@ const Hero = () => {
             onClick={scrollToTours}
             className="group"
           >
-            Touren entdecken
+            {t("hero.exploreTours")}
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
           <Button
-            variant="outline"
+            variant="secondary-cta"
             size="xl"
             onClick={scrollToBooking}
-            className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
           >
-            Beratung buchen
+            {t("hero.bookConsultation")}
           </Button>
         </div>
       </div>

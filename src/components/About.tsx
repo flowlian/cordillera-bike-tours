@@ -1,26 +1,29 @@
 import { Shield, Users, Heart, Award } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
+  
   const features = [
     {
       icon: Shield,
-      title: "Sicherheit",
-      description: "Professionelle Guides und top Equipment für deine Sicherheit auf jeder Tour.",
+      title: t("about.safety"),
+      description: t("about.safetyDesc"),
     },
     {
       icon: Users,
-      title: "Kleine Gruppen",
-      description: "Maximal 8 Teilnehmer pro Tour für ein persönliches Erlebnis.",
+      title: t("about.smallGroups"),
+      description: t("about.smallGroupsDesc"),
     },
     {
       icon: Heart,
-      title: "Leidenschaft",
-      description: "Wir lieben die Berge Kolumbiens und teilen diese Begeisterung mit dir.",
+      title: t("about.passion"),
+      description: t("about.passionDesc"),
     },
     {
       icon: Award,
-      title: "Erfahrung",
-      description: "Über 10 Jahre Expertise in den kolumbianischen Anden.",
+      title: t("about.experience"),
+      description: t("about.experienceDesc"),
     },
   ];
 
@@ -30,24 +33,12 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Über <span className="text-primary">uns</span>
+              {t("about.title")}
             </h2>
             <div className="space-y-4 text-lg text-foreground/80">
-              <p>
-                Wir sind ein deutschsprachiges Team von Mountainbike-Enthusiasten,
-                die Kolumbien zu ihrer zweiten Heimat gemacht haben. Unsere Leidenschaft
-                ist es, dir die spektakulärsten Trails der Anden zu zeigen.
-              </p>
-              <p>
-                Mit lokalen Guides, die jeden Trail wie ihre Westentasche kennen,
-                garantieren wir dir ein authentisches und sicheres Abenteuer.
-                Egal ob Einsteiger oder Profi – wir finden die perfekte Tour für dich.
-              </p>
-              <p>
-                Unsere Touren verbinden sportliche Herausforderungen mit kulturellen
-                Erlebnissen. Du lernst nicht nur die Landschaft, sondern auch die
-                herzlichen Menschen Kolumbiens kennen.
-              </p>
+              <p>{t("about.text1")}</p>
+              <p>{t("about.text2")}</p>
+              <p>{t("about.text3")}</p>
             </div>
           </div>
 
