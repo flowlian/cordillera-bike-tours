@@ -23,10 +23,6 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
-        "secondary-cta": {
-          DEFAULT: "hsl(var(--secondary-cta))",
-          foreground: "hsl(var(--secondary-cta-foreground))",
-        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",

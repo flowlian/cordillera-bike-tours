@@ -12,8 +12,8 @@ const About = () => {
     },
     {
       icon: Users,
-      title: t("about.smallGroups"),
-      description: t("about.smallGroupsDesc"),
+      title: t("about.sustainability"),
+      description: t("about.sustainabilityDesc"),
     },
     {
       icon: Heart,

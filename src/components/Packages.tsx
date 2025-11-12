@@ -107,7 +107,7 @@ const Packages = () => {
           <p className="text-lg text-muted-foreground mb-4">
             {t("packages.customizable")}
           </p>
-          <Button variant="secondary-cta" size="lg" onClick={scrollToBooking}>
+          <Button variant="secondary" size="lg" onClick={scrollToBooking}>
             {t("nav.booking")}
           </Button>
         </div>

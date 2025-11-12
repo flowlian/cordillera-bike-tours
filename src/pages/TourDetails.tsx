@@ -159,14 +159,6 @@ const TourDetails = () => {
               >
                 {t("tours.requestTour")}
               </Button>
-              <Button
-                variant="secondary-cta"
-                size="lg"
-                onClick={scrollToBooking}
-                className="w-full sm:w-auto"
-              >
-                {t("nav.bookTour")}
-              </Button>
             </div>
           </div>
         </section>

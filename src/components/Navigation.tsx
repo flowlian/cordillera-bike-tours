@@ -60,13 +60,6 @@ const Navigation = () => {
             >
               {t("nav.booking")}
             </Button>
-            <Button
-              variant="secondary-cta"
-              size="default"
-              onClick={() => handleNavClick("#booking")}
-            >
-              {t("nav.bookTour")}
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -102,14 +95,6 @@ const Navigation = () => {
                 className="w-full"
               >
                 {t("nav.booking")}
-              </Button>
-              <Button
-                variant="secondary-cta"
-                size="default"
-                onClick={() => handleNavClick("#booking")}
-                className="w-full"
-              >
-                {t("nav.bookTour")}
               </Button>
             </div>
           </div>

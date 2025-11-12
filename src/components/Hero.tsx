@@ -25,7 +25,7 @@ const Hero = () => {
           alt="Colombian Andes mountains with wax palms"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/50 to-primary/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/25 to-primary/15" />
       </div>
 
       {/* Content */}
@@ -45,13 +45,6 @@ const Hero = () => {
           >
             {t("hero.exploreTours")}
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          <Button
-            variant="secondary-cta"
-            size="xl"
-            onClick={scrollToBooking}
-          >
-            {t("hero.bookConsultation")}
           </Button>
         </div>
       </div>
