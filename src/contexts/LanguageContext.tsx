@@ -19,7 +19,7 @@ const translations = {
     "nav.bookTour": "Tour buchen",
     
     // Hero
-    "hero.title": "Fahrradtouren in den Kolumbianischen Anden",
+    "hero.title": "Cordillera Bike Tours",
     "hero.subtitle": "Erlebe unvergessliche Mountainbike-Abenteuer in den spektakulären Bergen Kolumbiens. Von Cocora bis zur Sierra Nevada – deine Traumtour wartet.",
     "hero.exploreTours": "Touren entdecken",
     "hero.bookConsultation": "Beratung buchen",
@@ -66,10 +66,10 @@ const translations = {
     "packages.7dayDesc": "Das ultimative Anden-Erlebnis",
     "packages.feature1": "Professionelle Guides",
     "packages.feature2": "Hochwertige Bikes & Equipment",
-    "packages.feature3": "Alle Mahlzeiten",
-    "packages.feature4": "Flughafenabholung",
-    "packages.feature5": "Private Unterkunft",
-    "packages.feature6": "Stadtrundfahrt Pereira",
+    "packages.feature3": "Frühstück inklusive",
+    "packages.feature4": "Private Unterkunft",
+    "packages.feature5": "Stadtrundfahrt Pereira",
+    "packages.feature6": "Nachhaltige Tour-Praktiken",
     
     // Testimonials
     "testimonials.title": "Was unsere Gäste sagen",
@@ -110,7 +110,7 @@ const translations = {
     "nav.bookTour": "Book Tour",
     
     // Hero
-    "hero.title": "Bicycle Tours in the Colombian Andes",
+    "hero.title": "Cordillera Bike Tours",
     "hero.subtitle": "Experience unforgettable mountain biking adventures in Colombia's spectacular mountains. From Cocora to Sierra Nevada – your dream tour awaits.",
     "hero.exploreTours": "Explore Tours",
     "hero.bookConsultation": "Book Consultation",
@@ -157,10 +157,10 @@ const translations = {
     "packages.7dayDesc": "The ultimate Andes experience",
     "packages.feature1": "Professional guides",
     "packages.feature2": "High-quality bikes & equipment",
-    "packages.feature3": "All meals",
-    "packages.feature4": "Airport pickup",
-    "packages.feature5": "Private accommodation",
-    "packages.feature6": "Pereira city tour",
+    "packages.feature3": "Breakfast included",
+    "packages.feature4": "Private accommodation",
+    "packages.feature5": "Pereira city tour",
+    "packages.feature6": "Sustainable tour practices",
     
     // Testimonials
     "testimonials.title": "What Our Guests Say",
@@ -201,7 +201,7 @@ const translations = {
     "nav.bookTour": "Reservar Tour",
     
     // Hero
-    "hero.title": "Tours de Bicicleta en los Andes Colombianos",
+    "hero.title": "Cordillera Bike Tours",
     "hero.subtitle": "Vive aventuras inolvidables en bicicleta de montaña en las espectaculares montañas de Colombia. Desde Cocora hasta la Sierra Nevada – tu tour soñado te espera.",
     "hero.exploreTours": "Explorar Tours",
     "hero.bookConsultation": "Reservar Consulta",
@@ -248,10 +248,10 @@ const translations = {
     "packages.7dayDesc": "La experiencia definitiva en los Andes",
     "packages.feature1": "Guías profesionales",
     "packages.feature2": "Bicicletas y equipo de alta calidad",
-    "packages.feature3": "Todas las comidas",
-    "packages.feature4": "Recogida en el aeropuerto",
-    "packages.feature5": "Alojamiento privado",
-    "packages.feature6": "Tour por la ciudad de Pereira",
+    "packages.feature3": "Desayuno incluido",
+    "packages.feature4": "Alojamiento privado",
+    "packages.feature5": "Tour por la ciudad de Pereira",
+    "packages.feature6": "Prácticas de tour sostenibles",
     
     // Testimonials
     "testimonials.title": "Lo que Dicen Nuestros Huéspedes",

@@ -28,12 +28,12 @@ const TourCard = ({
   const { t } = useLanguage();
 
   return (
-    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
       <div className="relative h-48 overflow-hidden">
         <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
       </div>
       
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-2xl font-bold mb-4">{title}</h3>
         
         <div className="grid grid-cols-2 gap-3 mb-4">
@@ -55,9 +55,9 @@ const TourCard = ({
           </div>
         </div>
 
-        <p className="text-foreground/70 mb-4 line-clamp-3">{description}</p>
+        <p className="text-foreground/70 mb-6 line-clamp-3 flex-grow">{description}</p>
 
-        <Button variant="hero" className="w-full" onClick={onViewDetails}>
+        <Button variant="hero" className="w-full mt-auto" onClick={onViewDetails}>
           {t("tours.viewDetails")}
         </Button>
       </div>

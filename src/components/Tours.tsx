@@ -9,6 +9,8 @@ import tourBosque1 from "@/assets/tour-bosque-1.jpg";
 import tourFlores1 from "@/assets/tour-flores-1.jpg";
 import tourRio1 from "@/assets/tour-rio-1.jpg";
 import tourCacao1 from "@/assets/tour-cacao-1.jpg";
+import tourMango1 from "@/assets/tour-mango-1.jpg";
+import tourAguacate1 from "@/assets/tour-aguacate-1.jpg";
 
 const Tours = () => {
   const { language, t } = useLanguage();
@@ -22,6 +24,8 @@ const Tours = () => {
     flores: tourFlores1,
     rio: tourRio1,
     cacao: tourCacao1,
+    mango: tourMango1,
+    aguacate: tourAguacate1,
   };
 
   const tours = toursData[language].map(tour => ({

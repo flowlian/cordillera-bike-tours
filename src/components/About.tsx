@@ -1,9 +1,11 @@
 import { Shield, Users, Heart, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+import sustainabilityIcon from "@/assets/sustainability-icon.png";
+
 const About = () => {
   const { t } = useLanguage();
-  
+
   const features = [
     {
       icon: Shield,
@@ -11,7 +13,7 @@ const About = () => {
       description: t("about.safetyDesc"),
     },
     {
-      icon: Users,
+      icon: "sustainability",
       title: t("about.sustainability"),
       description: t("about.sustainabilityDesc"),
     },
@@ -44,13 +46,21 @@ const About = () => {
 
           <div className="grid grid-cols-2 gap-6">
             {features.map((feature, index) => {
-              const Icon = feature.icon;
+              const Icon = typeof feature.icon === 'string' ? null : feature.icon;
               return (
                 <div
                   key={index}
                   className="bg-card p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 >
-                  <Icon className="h-10 w-10 text-primary mb-4" />
+                  {Icon ? (
+                    <Icon className="h-10 w-10 text-primary mb-4" />
+                  ) : (
+                    <img 
+                      src={sustainabilityIcon} 
+                      alt="Sustainability" 
+                      className="h-10 w-10 object-contain mb-4"
+                    />
+                  )}
                   <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
                   <p className="text-sm text-muted-foreground">{feature.description}</p>
                 </div>
