@@ -41,6 +41,7 @@ const About = () => {
               <p>{t("about.text1")}</p>
               <p>{t("about.text2")}</p>
               <p>{t("about.text3")}</p>
+              <p>{t("about.text4")}</p>
             </div>
           </div>
 

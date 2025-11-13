@@ -136,17 +136,38 @@ const TourDetails = () => {
 
             {/* Wikiloc Map */}
             <div className="mb-8">
-              <h2 className="text-3xl font-bold mb-4">Route auf Wikiloc</h2>
-              <div className="bg-card rounded-lg p-6 shadow-md">
-                <a
-                  href={tour.wikiloc}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline flex items-center gap-2"
-                >
-                  <MapPin className="h-5 w-5" />
-                  Route auf Wikiloc anzeigen
-                </a>
+              <h2 className="text-3xl font-bold mb-4">{language === 'de' ? 'Route auf Wikiloc' : language === 'en' ? 'Route on Wikiloc' : 'Ruta en Wikiloc'}</h2>
+              <div className="bg-card rounded-lg p-6 shadow-md overflow-hidden">
+                {tour.id === 'rio' && (
+                  <iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/embedv2.do?id=1775304&elevation=off&images=off&maptype=H" className="w-full h-[500px]"></iframe>
+                )}
+                {tour.id === 'pina' && (
+                  <iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/embedv2.do?id=147079318&elevation=off&images=off&maptype=H" className="w-full h-[500px]"></iframe>
+                )}
+                {tour.id === 'cafe' && (
+                  <iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/embedv2.do?id=936060&elevation=off&images=off&maptype=H" className="w-full h-[500px]"></iframe>
+                )}
+                {tour.id === 'palmas' && (
+                  <iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/embedv2.do?id=12693972&elevation=off&images=off&maptype=H" className="w-full h-[500px]"></iframe>
+                )}
+                {tour.id === 'bosque' && (
+                  <iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/embedv2.do?id=21347012&elevation=off&images=off&maptype=H" className="w-full h-[500px]"></iframe>
+                )}
+                {tour.id === 'flores' && (
+                  <iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/embedv2.do?id=12559900&elevation=off&images=off&maptype=H" className="w-full h-[500px]"></iframe>
+                )}
+                {tour.id === 'cacao' && (
+                  <iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/embedv2.do?id=61449918&elevation=off&images=off&maptype=H" className="w-full h-[500px]"></iframe>
+                )}
+                {tour.id === 'mango' && (
+                  <iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/embedv2.do?id=147079318&elevation=off&images=off&maptype=H" className="w-full h-[500px]"></iframe>
+                )}
+                {tour.id === 'aguacate' && (
+                  <iframe frameBorder="0" scrolling="no" src="https://es.wikiloc.com/wikiloc/embedv2.do?id=936060&elevation=off&images=off&maptype=H" className="w-full h-[500px]"></iframe>
+                )}
+                <div className="text-xs text-muted-foreground mt-2">
+                  Powered by <a href="https://es.wikiloc.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wikiloc</a>
+                </div>
               </div>
             </div>
 
