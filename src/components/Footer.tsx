@@ -17,7 +17,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <Link to="/" className="flex items-center gap-2 font-bold text-xl text-primary mb-4">I craft visual identities that feel alive and authentic, helping brands express their essence with meaning and with personality.Cordillera Bike Tours<Mountain className="h-6 w-6" fill="currentColor" />
+            <Link to="/" className="flex items-center gap-2 font-bold text-xl text-primary mb-4">
+
+Cordillera Bike Tours<Mountain className="h-6 w-6" fill="currentColor" />
               Andes Bike Tours
             </Link>
             <p className="text-sm text-muted-foreground">
