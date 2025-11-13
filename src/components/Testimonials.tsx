@@ -6,7 +6,7 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: language === "de" ? "Maria Schmidt" : language === "en" ? "Maria Schmidt" : "María Schmidt",
+      name: language === "de" ? "Laura Hermann" : language === "en" ? "Laura Hermann" : "Laura Hermann",
       rating: 5,
       text: {
         de: "Eine unvergessliche Erfahrung! Die Guides waren super professionell und die Landschaften atemberaubend. Kann es nur weiterempfehlen!",
