@@ -57,7 +57,7 @@ const TourCard = ({
 
         <p className="text-foreground/70 mb-6 line-clamp-3 flex-grow">{description}</p>
 
-        <Button variant="hero" className="w-full mt-auto" onClick={onViewDetails}>
+        <Button variant="tourCard" className="w-full mt-auto" onClick={onViewDetails}>
           {t("tours.viewDetails")}
         </Button>
       </div>

@@ -16,6 +16,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl hover:scale-105 font-semibold",
+        tourCard: "bg-[#E2B71F] text-black hover:bg-[#E2B71F]/90 transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",

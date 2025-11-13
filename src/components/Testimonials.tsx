@@ -1,5 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Star } from "lucide-react";
+import { Star, User } from "lucide-react";
 
 const Testimonials = () => {
   const { language, t } = useLanguage();
@@ -7,7 +7,6 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: language === "de" ? "Maria Schmidt" : language === "en" ? "Maria Schmidt" : "María Schmidt",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop",
       rating: 5,
       text: {
         de: "Eine unvergessliche Erfahrung! Die Guides waren super professionell und die Landschaften atemberaubend. Kann es nur weiterempfehlen!",
@@ -17,7 +16,6 @@ const Testimonials = () => {
     },
     {
       name: language === "de" ? "Thomas Müller" : language === "en" ? "Thomas Mueller" : "Thomas Müller",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
       rating: 5,
       text: {
         de: "Die perfekte Mischung aus Sport und Kultur. Kleine Gruppen, tolle Organisation und authentische Erlebnisse.",
@@ -27,7 +25,6 @@ const Testimonials = () => {
     },
     {
       name: language === "de" ? "Sarah Weber" : language === "en" ? "Sarah Weber" : "Sarah Weber",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
       rating: 5,
       text: {
         de: "Als Anfängerin hatte ich etwas Bedenken, aber die Tour war perfekt auf mein Level abgestimmt. Wunderschöne Natur und herzliche Menschen!",
@@ -56,11 +53,9 @@ const Testimonials = () => {
               className="bg-card p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex items-center gap-4 mb-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover"
-                />
+                <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center">
+                  <User className="h-8 w-8 text-muted-foreground" />
+                </div>
                 <div>
                   <h3 className="font-semibold text-lg">{testimonial.name}</h3>
                   <div className="flex gap-1">

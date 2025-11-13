@@ -1,12 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Mail, Phone } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import heroImage from "@/assets/hero-cocora.jpg";
 
 const Booking = () => {
   const { t } = useLanguage();
   return (
     <section id="booking" className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-10" />
+      <div className="absolute inset-0">
+        <img 
+          src={heroImage} 
+          alt="Background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/60" />
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
@@ -17,7 +25,7 @@ const Booking = () => {
             {t("booking.subtitle")}
           </p>
 
-          <div className="bg-card rounded-2xl shadow-2xl p-8 md:p-12 space-y-6">
+          <div className="bg-card/65 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12 space-y-6">
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="flex flex-col items-center gap-2">
                 <div className="bg-primary/10 p-4 rounded-full">
@@ -43,7 +51,7 @@ const Booking = () => {
               variant="hero"
               size="xl"
               className="w-full md:w-auto px-12"
-              onClick={() => window.open("mailto:info@andesbiketours.com?subject=Beratungsgespräch%20Anfrage", "_blank")}
+              onClick={() => window.open("mailto:info@cordillerabiketours.com?subject=Beratungsgespräch%20Anfrage", "_blank")}
             >
               {t("booking.cta")}
             </Button>
@@ -51,8 +59,8 @@ const Booking = () => {
             <div className="pt-6 border-t border-border">
               <p className="text-sm text-muted-foreground">
                 {t("booking.email")}:{" "}
-                <a href="mailto:info@andesbiketours.com" className="text-primary hover:underline">
-                  info@andesbiketours.com
+                <a href="mailto:info@cordillerabiketours.com" className="text-primary hover:underline">
+                  info@cordillerabiketours.com
                 </a>
               </p>
             </div>

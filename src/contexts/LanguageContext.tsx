@@ -19,8 +19,8 @@ const translations = {
     "nav.bookTour": "Tour buchen",
     
     // Hero
-    "hero.title": "Cordillera Bike Tours",
-    "hero.subtitle": "Erlebe unvergessliche Mountainbike-Abenteuer in den spektakulären Bergen Kolumbiens. Von Cocora bis zur Sierra Nevada – deine Traumtour wartet.",
+    "hero.title": "Radtouren in den Kolumbianischen Anden",
+    "hero.subtitle": "Erlebe unvergessliche Mountainbike-Abenteuer in den spektakulären Bergen Kolumbiens.",
     "hero.exploreTours": "Touren entdecken",
     "hero.bookConsultation": "Beratung buchen",
     
@@ -110,8 +110,8 @@ const translations = {
     "nav.bookTour": "Book Tour",
     
     // Hero
-    "hero.title": "Cordillera Bike Tours",
-    "hero.subtitle": "Experience unforgettable mountain biking adventures in Colombia's spectacular mountains. From Cocora to Sierra Nevada – your dream tour awaits.",
+    "hero.title": "Bike Tours in the Colombian Andes",
+    "hero.subtitle": "Experience unforgettable mountain biking adventures in Colombia's spectacular mountains.",
     "hero.exploreTours": "Explore Tours",
     "hero.bookConsultation": "Book Consultation",
     
@@ -201,8 +201,8 @@ const translations = {
     "nav.bookTour": "Reservar Tour",
     
     // Hero
-    "hero.title": "Cordillera Bike Tours",
-    "hero.subtitle": "Vive aventuras inolvidables en bicicleta de montaña en las espectaculares montañas de Colombia. Desde Cocora hasta la Sierra Nevada – tu tour soñado te espera.",
+    "hero.title": "Recorridos en Bicicleta en los Andes Colombianos",
+    "hero.subtitle": "Vive aventuras inolvidables en bicicleta de montaña en las espectaculares montañas de Colombia.",
     "hero.exploreTours": "Explorar Tours",
     "hero.bookConsultation": "Reservar Consulta",
     
