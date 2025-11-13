@@ -37,9 +37,10 @@ const translations = {
     
     // About
     "about.title": "Über uns",
-    "about.text1": "Wir sind ein deutschsprachiges Team von Mountainbike-Enthusiasten, die Kolumbien zu ihrer zweiten Heimat gemacht haben. Unsere Leidenschaft ist es, dir die spektakulärsten Trails der Anden zu zeigen.",
-    "about.text2": "Mit lokalen Guides, die jeden Trail wie ihre Westentasche kennen, garantieren wir dir ein authentisches und sicheres Abenteuer. Egal ob Einsteiger oder Profi – wir finden die perfekte Tour für dich.",
-    "about.text3": "Unsere Touren sind mit Umweltverantwortung und fairen Bedingungen geplant. Du lernst nicht nur die Landschaft, sondern auch die herzlichen Menschen Kolumbiens kennen.",
+    "about.text1": "Wir sind eine kolumbianisch-deutsche Familie, deren Geist und Seele sich zwischen zwei Heimaten bewegen.",
+    "about.text2": "Unsere Leidenschaft ist es, dir die spektakulärsten Trails der zentralen Anden-Gebirgskette zu zeigen.",
+    "about.text3": "Mit lokalen Guides, die jeden Weg wie ihre Westentasche kennen, garantieren wir dir ein authentisches und sicheres Abenteuer. Egal ob Anfänger oder Experte – wir finden die perfekte Tour für dich.",
+    "about.text4": "Alle unsere Touren sind mit Umweltverantwortung und fairen Bedingungen geplant. Du erlebst nicht nur atemberaubende Landschaften, sondern lernst auch die warmherzigen Menschen Kolumbiens kennen.",
     "about.safety": "Sicherheit",
     "about.safetyDesc": "Professionelle Guides, top Equipment, privater Transport, und sichere Unterkünfte für deine Sicherheit auf jeder Tour.",
     "about.sustainability": "Nachhaltigkeit",
@@ -128,9 +129,10 @@ const translations = {
     
     // About
     "about.title": "About Us",
-    "about.text1": "We are a German-speaking team of mountain bike enthusiasts who have made Colombia our second home. Our passion is to show you the most spectacular trails in the Andes.",
-    "about.text2": "With local guides who know every trail inside out, we guarantee you an authentic and safe adventure. Whether beginner or pro – we'll find the perfect tour for you.",
-    "about.text3": "Our tours are planned with environmental responsibility and fair conditions at the forefront. You'll get to know not only the landscape but also the warm-hearted people of Colombia.",
+    "about.text1": "We are a Colombian-German family whose spirit and soul move between two homelands.",
+    "about.text2": "Our passion is to show you the most spectacular trails of the Central Andes mountain range.",
+    "about.text3": "With local guides who know every path like the back of their hand, we guarantee you an authentic and safe adventure. Whether you're a beginner or an expert – we'll find the perfect tour for you.",
+    "about.text4": "All our tours are designed with environmental responsibility and fair conditions. You'll not only experience breathtaking landscapes but also meet the warm-hearted people of Colombia.",
     "about.safety": "Safety",
     "about.safetyDesc": "Professional guides, top equipment, private transport, and secure accommodations for your safety on every tour.",
     "about.sustainability": "Sustainability",
@@ -219,9 +221,10 @@ const translations = {
     
     // About
     "about.title": "Nosotros",
-    "about.text1": "Somos un equipo de habla alemana de entusiastas del ciclismo de montaña que han hecho de Colombia su segundo hogar. Nuestra pasión es mostrarte los senderos más espectaculares de los Andes.",
-    "about.text2": "Con guías locales que conocen cada sendero al dedillo, te garantizamos una aventura auténtica y segura. Ya seas principiante o profesional, encontraremos el tour perfecto para ti.",
-    "about.text3": "Nuestros tours están planificados con responsabilidad ambiental y condiciones justas al frente. Conocerás no solo el paisaje, sino también a la gente cálida de Colombia.",
+    "about.text1": "Somos una familia colombo-alemana cuyo espíritu y alma se mueven entre dos hogares.",
+    "about.text2": "Nuestra pasión es mostrarte los senderos más espectaculares de la cordillera central de los Andes.",
+    "about.text3": "Con guías locales que conocen cada camino como la palma de su mano, te garantizamos una aventura auténtica y segura. Ya seas principiante o experto, encontraremos el tour perfecto para ti.",
+    "about.text4": "Todos nuestros tours están diseñados con responsabilidad ambiental y condiciones justas. No solo experimentarás paisajes impresionantes, sino que también conocerás a la gente cálida de Colombia.",
     "about.safety": "Seguridad",
     "about.safetyDesc": "Guías profesionales, equipo de primera, transporte privado y alojamiento seguro para tu seguridad en cada tour.",
     "about.sustainability": "Sostenibilidad",
