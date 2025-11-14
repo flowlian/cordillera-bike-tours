@@ -19,7 +19,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center gap-2 font-bold text-xl text-primary mb-4">
 
-Cordillera Bike Tours<Mountain className="h-6 w-6" fill="currentColor" />
+Cordillera Bike Tours<Mountain className="h-6 w-6" fill="currentColor" />
               Andes Bike Tours
             </Link>
             <p className="text-sm text-muted-foreground">

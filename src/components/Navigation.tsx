@@ -41,7 +41,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 font-bold text-xl text-primary">
 
-Cordillera Bike Tours<Mountain className="h-6 w-6" fill="currentColor" />
+Cordillera Bike Tours<Mountain className="h-6 w-6" fill="currentColor" />
             Andes Bike Tours
           </Link>
 
