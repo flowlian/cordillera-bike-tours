@@ -30,14 +30,14 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section id="about" className="py-12 sm:py-16 md:py-20">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               {t("about.title")}
             </h2>
-            <div className="space-y-4 text-lg text-foreground/80">
+            <div className="space-y-3 sm:space-y-4 text-base sm:text-lg text-foreground/80">
               <p>{t("about.text1")}</p>
               <p>{t("about.text2")}</p>
               <p>{t("about.text3")}</p>
@@ -45,25 +45,25 @@ const About = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6">
             {features.map((feature, index) => {
               const Icon = typeof feature.icon === 'string' ? null : feature.icon;
               return (
                 <div
                   key={index}
-                  className="bg-card p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                  className="bg-card p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                 >
                   {Icon ? (
-                    <Icon className="h-10 w-10 text-primary mb-4" />
+                    <Icon className="h-8 w-8 sm:h-10 sm:w-10 text-primary mb-3 sm:mb-4" />
                   ) : (
                     <img 
                       src={sustainabilityIcon} 
                       alt="Sustainability" 
-                      className="h-10 w-10 object-contain mb-4"
+                      className="h-8 w-8 sm:h-10 sm:w-10 object-contain mb-3 sm:mb-4"
                     />
                   )}
-                  <h3 className="font-semibold text-lg mb-2">{feature.title}</h3>
-                  <p className="text-sm text-muted-foreground">{feature.description}</p>
+                  <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">{feature.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{feature.description}</p>
                 </div>
               );
             })}

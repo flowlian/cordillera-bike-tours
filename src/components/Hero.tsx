@@ -29,19 +29,19 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+      <div className="relative z-10 container mx-auto px-6 sm:px-4 text-center text-white">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 animate-fade-in leading-tight">
           {t("hero.title")}
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white/90 animate-fade-in">
+        <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 max-w-3xl mx-auto text-white/90 animate-fade-in px-4">
           {t("hero.subtitle")}
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-in px-4">
           <Button
             variant="hero"
             size="xl"
             onClick={scrollToTours}
-            className="group"
+            className="group w-full sm:w-auto"
           >
             {t("hero.exploreTours")}
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

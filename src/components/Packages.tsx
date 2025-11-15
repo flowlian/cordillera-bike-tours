@@ -43,23 +43,23 @@ const Packages = () => {
   };
 
   return (
-    <section id="packages" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+    <section id="packages" className="py-12 sm:py-16 md:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">
             {t("packages.title")}
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             {t("packages.subtitle")}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto mb-8 sm:mb-10 md:mb-12">
           {packages.map((pkg, index) => (
             <Card
               key={index}
-              className={`p-8 relative ${
-                pkg.popular ? "border-2 border-primary shadow-xl scale-105" : ""
+              className={`p-6 sm:p-8 relative ${
+                pkg.popular ? "border-2 border-primary shadow-xl sm:scale-105" : ""
               }`}
             >
               {pkg.popular && (
@@ -70,16 +70,16 @@ const Packages = () => {
                 </div>
               )}
 
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold mb-2">{t(pkg.titleKey)}</h3>
-                <p className="text-muted-foreground mb-4">{t(pkg.descKey)}</p>
-                <div className="text-4xl font-bold text-primary mb-2">
+              <div className="text-center mb-4 sm:mb-6">
+                <h3 className="text-xl sm:text-2xl font-bold mb-2">{t(pkg.titleKey)}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">{t(pkg.descKey)}</p>
+                <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">
                   {t("packages.from")} €{pkg.price}
                 </div>
                 <p className="text-sm text-muted-foreground">{t("packages.perPerson")}</p>
               </div>
 
-              <div className="mb-6">
+              <div className="mb-4 sm:mb-6">
                 <p className="text-sm font-semibold mb-3">{t("packages.includes")}:</p>
                 <ul className="space-y-2">
                   {features.map((feature, i) => (
