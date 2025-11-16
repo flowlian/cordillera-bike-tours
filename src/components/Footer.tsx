@@ -80,27 +80,27 @@ const Footer = () => {
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
                 <a
-                  href="mailto:info@andesbiketours.com"
+                  href="mailto:info@cordillerabiketours.com"
                   className="hover:text-primary transition-colors"
                 >
-                  info@andesbiketours.com
+                  info@cordillerabiketours.com
                 </a>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
                 <a
-                  href="tel:+573001234567"
+                  href="tel:+493012345678"
                   className="hover:text-primary transition-colors"
                 >
-                  +57 300 123 4567
+                  +49 30 1234 5678
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-0.5" />
                 <span>
-                  Pereira, Risaralda
+                  Berlin
                   <br />
-                  Colombia
+                  Germany
                 </span>
               </li>
             </ul>
@@ -142,7 +142,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-6 sm:pt-8 text-center text-xs sm:text-sm text-muted-foreground">
-          <p>&copy; 2024 Cordillera Bike Tours. All rights reserved.</p>
+          <p>&copy; 2026 Cordillera Bike Tours. All rights reserved.</p>
         </div>
       </div>
     </footer>
