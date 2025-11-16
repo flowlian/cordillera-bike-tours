@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import sierraImage from "@/assets/hero-sierra-less-snow.jpg";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -13,8 +14,18 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-card border-t border-border py-8 sm:py-10 md:py-12">
-      <div className="container mx-auto px-4 sm:px-6">
+    <footer className="relative bg-card border-t border-border py-8 sm:py-10 md:py-12 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={sierraImage}
+          alt="Colombian Andes mountain landscape"
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/60" />
+      </div>
+      
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
             <Link to="/" className="font-bold text-xl text-primary mb-4 block">
