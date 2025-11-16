@@ -28,7 +28,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
-            <Link to="/" className="font-bold text-xl text-primary mb-4 block">
+            <Link to="/" className="font-bold text-xl text-primary mb-4 flex items-center gap-2">
+              <span className="text-2xl">◬</span>
               Cordillera Bike Tours
             </Link>
             <p className="text-sm text-muted-foreground">
