@@ -23,7 +23,7 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Colombian Andes mountains with wax palms"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center sm:object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/25 to-primary/15" />
       </div>
