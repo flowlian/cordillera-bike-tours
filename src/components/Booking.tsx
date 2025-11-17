@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Mail, Phone } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import heroImage from "@/assets/hero-cocora.jpg";
+import heroImage from "@/assets/hero-sierra-less-snow.jpg";
 
 const Booking = () => {
   const { t } = useLanguage();
