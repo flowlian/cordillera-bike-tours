@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
             <Link to="/" className="font-bold text-xl text-primary mb-4 block">
-              Cordillera Bike Tours
+              Sendero Bike Tours
             </Link>
             <p className="text-sm text-muted-foreground">
               {t("footer.tagline")}
@@ -142,7 +142,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-6 sm:pt-8 text-center text-xs sm:text-sm text-muted-foreground">
-          <p>&copy; 2026 Cordillera Bike Tours. All rights reserved.</p>
+          <p>&copy; 2026 Sendero Bike Tours. All rights reserved.</p>
         </div>
       </div>
     </footer>
